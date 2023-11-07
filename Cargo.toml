@@ -1,0 +1,22 @@
+[package]
+name = "mammon"
+version = "0.0.1"
+edition = "2021"
+license = "BSD-3-Clause"
+description = "simple, bad, blob storage api"
+repository = "https://github.com/Ruthenic/mammon"
+readme = "README.md"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+anyhow = "1.0.75"
+byteorder = "1.5.0"
+ciborium = "0.2.1"
+futures = "0.3.29"
+log = "0.4.20"
+serde = "1.0.191"
+
+[dev-dependencies]
+tempfile = "3.8.1"
+tokio = { version = "1.33.0", features = ["full"] }
